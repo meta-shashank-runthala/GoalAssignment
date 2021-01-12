@@ -6,7 +6,7 @@
         </div>
         <template for:each={toDos} for:item="todo">
             <div class="slds-align_absolute-center" key={todo.id}>
-                <lightning-pill label={todo.taskdetails} onremove={removeToDo}></lightning-pill>
+                <lightning-pill label={todo.taskdetails} value={todo.taskdetails} onremove={removeToDo}></lightning-pill>
             </div>
         </template>
     </lightning-card>

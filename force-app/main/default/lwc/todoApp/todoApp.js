@@ -26,7 +26,7 @@ export default class TodoApp extends LightningElement {
         this.taskDetails = '';
     }
 
-    removeToDo(event){
-        alert('Request To Delete: '+event.target.value);
+    removeToDo(event, data){
+        alert('Request To Delete: ' + data );
     }
 }
