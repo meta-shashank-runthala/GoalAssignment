@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="New Team Member" icon-name="standard:record">
+       <div class="slds-m-around_medium">
+           <lightning-input label="Name" value={name} onchange={handleNameChange} class="slds-m-bottom_x-small"></lightning-input>
+           <lightning-combobox label="Team" value={team} onchange={handleTeamChange} options={teamOptions} class="slds-m-bottom_x-small"></lightning-combobox>
+           <lightning-input label="Skills" value={skills} onchange={handleSkillsChange} class="slds-m-bottom_x-small"></lightning-input>
+           <lightning-button label="Add Member" variant="brand" onclick={createTeamMember}></lightning-button>
+       </div>
+    </lightning-card>
+</template>  
