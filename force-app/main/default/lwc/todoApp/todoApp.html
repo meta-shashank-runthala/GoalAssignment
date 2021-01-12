@@ -1,0 +1,13 @@
+<template>
+    <lightning-card class="slds-size--4-of-5">
+        <div>
+            <lightning-input class="slds-size--2-of-3 slds-align_absolute-center" label="Task" onchange={handlechange} value={taskDetails} placeholder="Enter new task" ></lightning-input>
+            <lightning-button class="slds-align_absolute-center" label="Add" title="add" onclick={addToDo}></lightning-button>
+        </div>
+        <template for:each={toDos} for:item="todo">
+            <div class="slds-align_absolute-center" key={todo.id}>
+                <lightning-pill label={todo.taskdetails} onremove={removeToDo}></lightning-pill>
+            </div>
+        </template>
+    </lightning-card>
+</template>
