@@ -5,9 +5,9 @@
 			<template if:true={teamMembers}>
 				<template for:each={teamMembers} for:item="teamMember">
 					<lightning-card class="slds-card_boundary" key={teamMember.Id}>
-						<p>Name : {teamMember.Name}</p>
-						<p>Team : {teamMember.Team__r.Name}</p>
-						<p>Skills : {teamMember.Skills__c}</p>
+						<p><b>Name :</b> {teamMember.Name}</p>
+						<p><b>Team :</b> {teamMember.Team__r.Name}</p>
+						<p><b>Skills :</b> {teamMember.Skills__c}</p>
 					</lightning-card>
 				</template>
 			</template>
