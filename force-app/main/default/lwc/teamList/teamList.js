@@ -6,7 +6,7 @@ import getTeamMembers from '@salesforce/apex/TeamsAppController.getTeamMembers';
 export default class TeamList extends LightningElement {
 	team;
 	@track teamOptions = [];
-	@track teamMembers = [];
+	@track teamMembers;
 
 
 	handleTeamChange(event) {

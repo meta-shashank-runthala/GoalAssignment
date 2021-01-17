@@ -10,7 +10,7 @@ public with sharing class TeamsAppController {
 	}
 
 	@AuraEnabled(Cacheable=true)
-	public static List<TeamMember> getTeamMembers(String team) {
+	public static List<TeamMember__c> getTeamMembers(String team) {
 		return [ 
 			SELECT Id, Name, Team__r.Name, Skills__c 
 			FROM TeamMember__c 

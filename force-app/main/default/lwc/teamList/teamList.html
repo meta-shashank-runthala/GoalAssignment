@@ -1,14 +1,16 @@
 <template>
-    <div class="slds-m-around_medium">
-        <lightning-combobox label="Team" value={team} onchange={handleTeamChange} options={teamOptions} class="slds-m-bottom_x-small"></lightning-combobox>
-        <template if:true={teamMembers}>
-            <template for:each={teamMembers} for:item="teamMember">
-                <lightning-card key={teamMember.Id}>
-                    <p>Name : {teamMember.Name}</p>
-                    <p>Team : {teamMember.Team__r.Name}</p>
-                    <p>Skills : {teamMember.Skills__c}</p>
-                </lightning-card>
-            </template>
-        </template>
-    </div>    
+	<lightning-card title="Team Members" icon-name="standard:record">
+		<div class="slds-m-around_medium">
+			<lightning-combobox label="Team" value={team} onchange={handleTeamChange} options={teamOptions} class="slds-m-bottom_x-small"></lightning-combobox>
+			<template if:true={teamMembers}>
+				<template for:each={teamMembers} for:item="teamMember">
+					<lightning-card class="slds-card_boundary" key={teamMember.Id}>
+						<p>Name : {teamMember.Name}</p>
+						<p>Team : {teamMember.Team__r.Name}</p>
+						<p>Skills : {teamMember.Skills__c}</p>
+					</lightning-card>
+				</template>
+			</template>
+		</div>
+	</lightning-card>  
 </template>
