@@ -1,7 +1,7 @@
 import { LightningElement, track, wire } from 'lwc';
 import { createRecord } from 'lightning/uiRecordApi';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
-import getListOfTeams from '@salesforce/apex/MemberSkillsController.getListOfTeams'
+import getListOfTeams from '@salesforce/apex/TeamsAppController.getListOfTeams'
 import TEAM_MEMBER_OBJECT from '@salesforce/schema/TeamMember__c';
 import NAME_FIELD from '@salesforce/schema/TeamMember__c.Name';
 import TEAM_FIELD from '@salesforce/schema/TeamMember__c.Team__c';
