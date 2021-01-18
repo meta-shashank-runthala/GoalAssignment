@@ -1,0 +1,14 @@
+[
+    {
+        "sobject": "Team__c",
+        "saveRefs": true,
+        "resolveRefs": true,
+        "files": ["Teams.json"]
+    },
+    {
+        "sobject": "TeamMember__c",
+        "saveRefs": true,
+        "resolveRefs": true,
+        "files": ["TeamMembers.json"]
+    }
+]

@@ -1,0 +1,24 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Team__c",
+                "referenceId": "TeamRef1"
+            },
+            "Name": "M1"
+        },
+        {
+            "attributes": {
+                "type": "Team__c",
+                "referenceId": "TeamRef2"
+            },
+            "Name": "M2"
+        },{
+            "attributes": {
+                "type": "Team__c",
+                "referenceId": "TeamRef3"
+            },
+            "Name": "M3"
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "TeamMember__c",
+                "referenceId": "TeamMember__cRefA1"
+            },
+            "Team__c": "@TeamRef1",
+            "Name": "A1",
+            "Skills__c": "Apex"
+        },
+        {
+            "attributes": {
+                "type": "TeamMember__c",
+                "referenceId": "TeamMember__cRefA2"
+            },
+            "Team__c": "@TeamRef1",
+            "Name": "A2",
+            "Skills__c": "Javascript"
+        },
+		{
+            "attributes": {
+                "type": "TeamMember__c",
+                "referenceId": "TeamMember__cRefA3"
+            },
+            "Team__c": "@TeamRef1",
+            "Name": "A3",
+            "Skills__c": "LWC"
+        },
+		{
+            "attributes": {
+                "type": "TeamMember__c",
+                "referenceId": "TeamMember__cRefB1"
+            },
+            "Team__c": "@TeamRef2",
+            "Name": "B1",
+            "Skills__c": "Einstein"
+        },
+		{
+            "attributes": {
+                "type": "TeamMember__c",
+                "referenceId": "TeamMember__cRefB2"
+            },
+            "Team__c": "@TeamRef2",
+            "Name": "B2",
+            "Skills__c": "ML"
+        },
+		{
+            "attributes": {
+                "type": "TeamMember__c",
+                "referenceId": "TeamMember__cRefB3"
+            },
+            "Team__c": "@TeamRef2",
+            "Name": "B3",
+            "Skills__c": "C++"
+        },
+		{
+            "attributes": {
+                "type": "TeamMember__c",
+                "referenceId": "TeamMember__cRefC1"
+            },
+            "Team__c": "@TeamRef3",
+            "Name": "C1",
+            "Skills__c": "C#"
+        },
+		{
+            "attributes": {
+                "type": "TeamMember__c",
+                "referenceId": "TeamMember__cRefC2"
+            },
+            "Team__c": "@TeamRef3",
+            "Name": "C2",
+            "Skills__c": "Java"
+        },
+		{
+            "attributes": {
+                "type": "TeamMember__c",
+                "referenceId": "TeamMember__cRefC3"
+            },
+            "Team__c": "@TeamRef3",
+            "Name": "C3",
+            "Skills__c": "Pyhton"
+        }
+    ]
+}
