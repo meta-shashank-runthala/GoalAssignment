@@ -4,15 +4,11 @@ Now that you’ve created a Salesforce DX project, what’s next? Here are some 
 
 ## How Do You Plan to Deploy Your Changes?
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
-
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+Go through the following steps to setup the project on your org
+1. Clone directory: git clone https://github.com/meta-shashank-runthala/GoalAssignment.git
+2. Navigate to the new GoalAssignment directory: cd GoalAssignment
+3. Authorise your org: sfdx auth:web:login -s -a <alias>
+4. Deploy the code to you org: sfdx force:source:deploy -p force-app/main/default
+5. Assign the permission set to current user: sfdx force:user:permset:assign -n Teams_App_User
+6. Import data: sfdx force:data:tree:import -p data/plan.json
+7. Open your org: sfdx force:org:open
