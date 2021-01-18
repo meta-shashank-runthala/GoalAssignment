@@ -20,11 +20,6 @@
         <field>TeamMember__c.Skills__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>TeamMember__c.Team__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Team App User</label>
     <objectPermissions>
