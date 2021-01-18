@@ -12,3 +12,4 @@ Go through the following steps to setup the project on your org
 5. Assign the permission set to current user: sfdx force:user:permset:assign -n Teams_App_User
 6. Import data: sfdx force:data:tree:import -p data/plan.json
 7. Open your org: sfdx force:org:open
+8. Go to Teams App from the app manager.
